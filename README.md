@@ -87,7 +87,7 @@ Output column:
 
 
 * **Type of model**: Decision-tree model
-* **Software used to implement the model**: Colaboratory
+* **Software used to implement the model**: Google Colab, 
 * **Version of the modeling software**: Python 3.6.9
 * **Hyperparameters or other settings of the model**: The cutoff of lending money is 0.12 below which the accuracy gets hampered for the given dataset.
 
@@ -122,9 +122,17 @@ Output column:
 
 ### Ethical considerations 
 * **Potential negative impacts of using the model**:
-* **Math or software problems**:
+* **Math or software problems**: 
+* Different Software version can fetch different results leading to potential impacts on decision making
+* Some algorithms can give different reults with the same dataset based on their nature(deterministic or stochastic)
 * **Real-world risks: who, what, when or how**:
+* Bias in data can be augmented over time if the model trains itself on the same data.
+* Taking decisions based on data requires the data to be regularly scrutinised for biases.This demands transpareny which is benficial to eliminate biases but can invite attacks/data poisoning incidents
 * **Potential uncertainties relating to the impacts of using your model**:
 * **Math or software problems**:
+* Math or Software: Data security is uncertain, breaches can directly impact lot of people
 * **Real-world risks: who, what, when or how?**:
+* RealWorld: Using race/gender in the data can lead to ethnic or gender based profiling, which can impair decision making.
 * **Any unexpected or results**:
+* hispanic-to-white AIR: 0.76 which is lesser than expected 0.80
+* female-to-male AIR: 1.06 which is above the 1.00 AIR
